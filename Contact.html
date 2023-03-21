@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="html_logo700x700.png" type="image/x-icon">
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <article>
+        <h2>Contact Me</h2>
+        <p>I'd really like to hear from you!</p>
+
+        <form action=""></form>
+         <fieldset>
+            <legend>Personal Info</legend>
+            <p>
+                <label for="FirstName">First Name</label>
+                <input type="text" name="FirstName" id="FirstName" placeholder="first Name" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="LastName">Last Name</label>
+                <input type="text" name="Lastname" id="LastNameName" placeholder="Last Name" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="Password" placeholder="Password" required>
+            </p>
+            <p>
+                <label for="Phone">Phone</label>
+                <input type="tel" name="Phone" id="Phone" placeholder="Phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+            </p>
+            <p>
+                <label for="YearOfBirth">YearOfBirth</label>
+                <input type="number" name="YearOfBirth" id="YearOfBirth" placeholder="YearOfBirth" min="1990" max="2023" step="1" value="2000" required>
+            </p>
+            <p>
+                <label for="Coffee">Coffee Favorite</label>
+                <select name="Coffee" id="Coffee">
+                  <optgroup label="Don't Drink" style="color:cornflowerblue"></optgroup>
+                    <option value="1">None</option>
+                <optgroup label="Hot-Ice" style="color:cornflowerblue"></optgroup>
+                    <option value="2">Hot Coffee</option>
+                    <option value="3">Ice Coffee</option>
+                <optgroup label="Coffee Type" style="color:cornflowerblue"></optgroup>
+                    <option value="4">Capuchino</option>
+                    <option value="5">Latee</option>
+                </select>
+            </p>
+         </fieldset>
+
+         <fieldset>
+            <legend>Whit is your favorite food?</legend>
+            <p>
+                <input type="radio" name="food" id="food" value="kfc">
+                <label for="kfc">KFC</label>
+            </p>
+            <p>
+                <input type="radio" name="food" id="pizza" value="pizza">
+                <label for="pizza">Pizza</label>
+            </p>
+            <p>
+                <input type="radio" name="food" id="other" value="other">
+                <label for="other">Other</label>
+            </p>
+        </form>
+    </article>
+
+</body>
+</html>
